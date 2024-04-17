@@ -63,7 +63,7 @@ const Contact = () => {
 
             <input
               type="email"
-              name="Email"
+              name="email"
               placeholder="Email"
               autoComplete="off"
               required
