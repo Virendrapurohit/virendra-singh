@@ -12,16 +12,16 @@ const Services = () => {
     <Wrapper className="section">
       <h2 className="common-heading">Our Services</h2>
       <div className="container grid grid-three-column">
-        {services.map((curElem) => {
-          const { id, name, image, description } = curElem;
+        {services.slice(0,6).map((curElem) => {
+          const { id,title, image,  } = curElem;
           return (
             <div key={id} className="card">
               <figure>
-                <img src={image} alt={name} />
+                <img src={image} alt={image} />
               </figure>
               <div className="card-data">
-                <h3>{name}</h3>
-                <p>{description}</p>
+                <h3>{title}</h3>
+                {/* <p>{description}</p> */}
                 <NavLink to="/service">
                   <Button className="btn">Read More</Button>
                 </NavLink>

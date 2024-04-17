@@ -3,7 +3,7 @@ import reducer from "./reducer";
 
 const AppContext = React.createContext();
 
-const API = "https://thapareactapi.up.railway.app";
+const API = "https://fakestoreapi.com/products";
 
 const intialState = {
   name: "",
@@ -62,4 +62,5 @@ const useGlobalContext = () => {
   return useContext(AppContext);
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export { AppProvider, useGlobalContext };

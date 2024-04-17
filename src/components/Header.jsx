@@ -7,17 +7,17 @@ const Header = () => {
   return (
     <MainHeader>
       <NavLink to="/">
-        <img src="./images/veeru.png" alt="logo" className="logo" />
+        <img src="../images/name-image.png" alt="logo" className="logo" />
       </NavLink>
       <Navbar />
     </MainHeader>
   );
 };
 
-const MainHeader = styled.header`
+const MainHeader = styled.header`  
   padding: 0 4.8rem;
   height: 10rem;
-  background-color: ${({ theme }) => theme.colors.bg};
+ background-color: ${({ theme }) => theme.colors.bg};
   display: flex;
   justify-content: space-between;
   align-items: center;
